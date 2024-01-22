@@ -1,0 +1,57 @@
+.select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.headding {
+  color: #a7b4ca;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.select {
+  appearance: none;
+  outline: 10px red;
+  border: 1px solid #a7b4ca;
+
+  box-shadow: none;
+  flex: 1;
+  padding: 0.1em;
+  color: #a7b4ca;
+
+  background-color: #37598e;
+  background-image: none;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.select::-ms-expand {
+  display: none;
+}
+.option-cont {
+  position: relative;
+  display: flex;
+  width: 160px;
+  height: 32px;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+.option-cont::after {
+  content: "\25BC";
+  display: inline-block;
+  font-size: 10px;
+  line-height: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 10px 8px;
+  background: #37598e;
+  pointer-events: none;
+  border: 1px solid #a7b4ca;
+  color: #a7b4ca;
+}
+.option-cont:hover::after {
+  color: black;
+}
